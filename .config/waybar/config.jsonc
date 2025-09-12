@@ -66,7 +66,8 @@
     "format": " {:%H:%M}",
   },
   "clock": {
-    "format": " {:L%a %d %b}",
+    //"format": " {:L%a %d %b}",
+    "format": " {:%d/%m/%Y}",
     "calendar": {
       "format": {
         "days": "<span weight='normal'>{}</span>",
@@ -79,7 +80,7 @@
       "mode-mon-col": 1,
       "on-scroll": 1,
     },
-    "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>",
+    "tooltip-format": "<span color='#cdd6f4' font='GeistMonoNerdFontPropo 16'><tt><small>{calendar}</small></tt></span>",
   },
   "cpu": {
     "format": " {usage}%",
