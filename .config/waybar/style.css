@@ -4,12 +4,13 @@
   font-family: GeistMonoNerdFontPropo;
   font-size: 16px;
   font-weight: 600;
+  border-radius: 6px;
 }
 
 tooltip {
   background-color: #181825;
   border: 1px solid #a832a0;
-  border-radius: 0px;
+  /*border-radius: 0px;*/
 }
 
 #waybar {
