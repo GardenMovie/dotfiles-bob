@@ -35,7 +35,13 @@ window#waybar>box {
   border-radius: 6px;
   /* background-color: #181825; */
   background-color: #1e1e2e;
-  color: #cdd6f4;
+  color: transparent;
+  transition: 
+    background-color 200ms ease,
+    color 200ms ease,
+    padding 200ms ease,
+    margin 200ms ease,
+    border-radius 200ms ease;
 }
 
 #workspaces button:hover {
@@ -44,8 +50,9 @@ window#waybar>box {
 }
 
 #workspaces button.active {
-  background-color: #1e1e2e;
-  color: #74c7ec;
+  background-color: #74c7ec;
+  color:#1e1e2e;
+  padding: 0.3rem 1.5rem;
 }
 
 #workspaces button.urgent {
@@ -55,6 +62,7 @@ window#waybar>box {
 
 #clock,
 #pulseaudio,
+
 #custom-logo,
 #custom-power,
 #custom-spotify,
@@ -118,7 +126,7 @@ window#waybar.empty #window {
 }
 
 #custom-logo {
-  color: #89b4fa;
+  color: #B4BEFE;
 }
 
 #custom-power {

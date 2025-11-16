@@ -10,7 +10,7 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["pulseaudio","mpris"],
+  "modules-left": ["custom/logo", "pulseaudio","mpris"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "network",
@@ -103,6 +103,10 @@
   },
   "custom/sep": {
     "format": "|",
+    "tooltip": false,
+  },
+  "custom/logo": {
+    "format": "󰣇",
     "tooltip": false,
   },
   "custom/power": {
