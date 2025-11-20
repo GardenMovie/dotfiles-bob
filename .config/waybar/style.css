@@ -39,7 +39,7 @@
 }
 
 tooltip {
-  background-color: inherit;
+  background-color: @bg-alt;
 }
 
 window#waybar {
@@ -53,7 +53,7 @@ window#waybar {
 }
 
 #workspaces button {
-  padding: 0.3rem 0.3rem;
+  padding: 0.3rem 0.4rem;
   margin: 0.4rem 0.25rem;
   background-color: @bg-alt;
   color: transparent;
@@ -71,8 +71,9 @@ window#waybar {
 }
 
 #workspaces button.active {
-  padding: 0.3rem 0.9rem;
-  background-color: @ws-active-bg;
+  padding: 0.3rem 1.2rem;
+  background-color: transparent;
+  border: 2px solid @bg-alt;
   color: @ws-active-fg;
 }
 
@@ -97,7 +98,7 @@ window#waybar {
 #memory,
 #window,
 #mpris {
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 0.8rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
   background-color: @bg-alt;
