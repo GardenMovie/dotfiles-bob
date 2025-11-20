@@ -1,6 +1,4 @@
 * {
-  min-height: 0;
-  min-width: 0;
   font-family: GeistMonoNerdFontPropo;
   font-size: 16px;
   font-weight: 600;
@@ -9,26 +7,23 @@
 
 tooltip {
   background-color: #181825;
-  border: 1px solid #a832a0;
   /*border-radius: 0px;*/
 }
 
-#waybar {
-  padding: 10px;
-}
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
   /* background-color: #1e1e2e; */
   /* background-color: #181825; */
   background-color: #11111b;
-  /*background-color: transparent;*/
+  background-color: transparent;
   /* background-color: rgba(24, 24, 37, 0.6); */
 }
 
 window#waybar>box {
   margin: 0px 5px;
 }
+
 #workspaces button {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
@@ -38,7 +33,7 @@ window#waybar>box {
   color: transparent;
   transition: 
     background-color 200ms ease,
-    color 200ms ease,
+    color 400ms ease,
     padding 200ms ease,
     margin 200ms ease,
     border-radius 200ms ease;
@@ -60,9 +55,9 @@ window#waybar>box {
   color: #f38ba8;
 }
 
+#network,
 #clock,
 #pulseaudio,
-
 #custom-logo,
 #custom-power,
 #custom-spotify,
@@ -134,9 +129,3 @@ window#waybar.empty #window {
 }
 
 
-#network {
-  background-color: #1e1e2e;
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  border-radius: 6px;
-}
