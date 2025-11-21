@@ -13,3 +13,4 @@ alias cd='z'
 
 PS1='[\u@\h \W]\$ '
 eval "$(zoxide init bash)"
+
