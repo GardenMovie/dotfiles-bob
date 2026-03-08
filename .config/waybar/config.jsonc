@@ -11,14 +11,9 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["custom/logo", "pulseaudio","mpris"],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": [
-    "network",
-    "clock",
-    "clock#simpleclock",
-    "custom/power"
-  ],
+  "modules-left": ["custom/logo", "hyprland/workspaces"],
+  "modules-center": ["clock#merged"],
+  "modules-right": ["mpris", "pulseaudio","network", "custom/power"],
   "custom/spotify": {
     "format": "  {}",
     "return-type": "json",
@@ -65,6 +60,24 @@
   "clock#simpleclock": {
     "tooltip": false,
     "format": " {:%H:%M}",
+  },
+  "clock#merged": {
+    //"format": " {:L%a %d %b}",
+    "format": " {:%d/%m/%Y  %H:%M}",
+    //"format": " {:%H:%M  %d/%m/%Y}",
+    "calendar": {
+      "format": {
+        "days": "<span weight='bold'>{}</span>",
+        "months": "<span color='#a6e3a1'><b>{}</b></span>",
+        "today": "<span color='#f9e2af' weight='700'><u>{}</u></span>",
+        "weekdays": "<span color='#89b4fa'><b>{}</b></span>",
+        "weeks": "<span color='#a6e3a1'><b>W{}</b></span>",
+      },
+      "mode": "month",
+      "mode-mon-col": 1,
+      "on-scroll": 1,
+    },
+    "tooltip-format": "<span color='#cdd6f4' font='GeistMonoNerdFontPropo 16'><tt><small>{calendar}</small></tt></span>",
   },
   "clock": {
     //"format": " {:L%a %d %b}",
