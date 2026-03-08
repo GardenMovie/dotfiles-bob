@@ -64,20 +64,24 @@
   "clock#merged": {
     //"format": " {:L%a %d %b}",
     "format": " {:%d/%m/%Y  %H:%M}",
+    "actions": {
+      "on-hover": "mode"
+    },
+    "interval": 1,
     //"format": " {:%H:%M  %d/%m/%Y}",
     "calendar": {
       "format": {
-        "days": "<span weight='bold'>{}</span>",
-        "months": "<span color='#a6e3a1'><b>{}</b></span>",
+        "days": "<span color='#cdd6f4' weight='bold'>{}</span>",
+        "months": "<span color='#a6e3a1'><b>    {}</b></span>",
         "today": "<span color='#f9e2af' weight='700'><u>{}</u></span>",
         "weekdays": "<span color='#89b4fa'><b>{}</b></span>",
-        "weeks": "<span color='#a6e3a1'><b>W{}</b></span>",
+        "weeks": "<span color='#a6e3a1'><b>{}</b></span>",
       },
       "mode": "month",
       "mode-mon-col": 1,
       "on-scroll": 1,
     },
-    "tooltip-format": "<span color='#cdd6f4' font='GeistMonoNerdFontPropo 16'><tt><small>{calendar}</small></tt></span>",
+        "tooltip-format": "<span font='GeistMonoNerdFontPropo 16' weight='bold'><tt><small><span color='#a6e3a1'>  {:%A | %H:%M:%S}</span>\n{calendar}</small></tt></span>",
   },
   "clock": {
     //"format": " {:L%a %d %b}",
@@ -125,7 +129,8 @@
   },
   "custom/power": {
     "tooltip": false,
-    "on-click": "wlogout -p layer-shell -b 4 -s &",
+    //"on-click": "wlogout -p layer-shell -b 4 -s &",
+    "on-click": "shutdown -h now",
     "format": "⏻",
   },
   "custom/notification": {
