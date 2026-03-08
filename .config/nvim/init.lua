@@ -1,3 +1,5 @@
+vim.opt.swapfile = false
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.scrolloff = 999
@@ -24,7 +26,7 @@ vim.g.mapleader = " "
 
 local keybind = vim.api.nvim_set_keymap
 
-keybind("n","<leader>r",":!python3 %<CR>", {noremap = true, silent =false})
+keybind("n", "<leader>r",":w<CR>:split | terminal gcc % -o %< && ./%<<CR> i", {noremap = true, silent = true})
 
 keybind("n","<leader>o",":source<CR>", {noremap = true, silent =false})
 
