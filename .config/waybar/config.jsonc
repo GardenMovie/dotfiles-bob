@@ -115,7 +115,7 @@
       "headphone": "",
       "default": ["", "", ""],
     },
-    "on-click":"pavucontrol",
+    "on-click":"pavucontrol -t 3",
     "on-click-middle": "/home/garden/.config/waybar/mute-toggle.sh",
     "on-click-right": "/home/garden/.config/waybar/audio-toggle.sh",
   },

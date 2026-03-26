@@ -159,6 +159,7 @@ window#waybar.empty #window {
 
 #custom-logo {
   color: @logo-color;
+  margin: 0.45rem 0.25rem;
 }
 
 #custom-power {

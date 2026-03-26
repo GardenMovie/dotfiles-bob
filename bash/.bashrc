@@ -2,22 +2,15 @@
 # ~/.bashrc
 #
 
-export EDITOR=nvim
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-alias config='nvim $HOME/.config/hypr/hyprland.conf'
-alias grep='grep --color=auto'
-alias fuck='sudo !!'
-alias vim='nvim'
-alias notes='NVIM_APPNAME=notesvim nvim'       
-alias movies='sleep 0.5; hyprctl dispatch dpms off DP-3'
-alias weather='curl wttr.in?0nF'
-
-PS1='\w -> '
 alias cd='z'
+alias grep='grep --color=auto'
+alias config='nvim ~/.config/sway/config'
+alias weather='curl wttr.in?0nF'
+PS1='\w -> '
 eval "$(zoxide init bash)"
 
 function y() {
